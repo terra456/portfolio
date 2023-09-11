@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <header class="header section">
+    <div class="section__wrapper header__wrapper">
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="link nav__link nav__link--portfolio" href="#portfolio">Портфолио</a>
+          </li>
+          <li class="nav__item">
+            <a class="link nav__link nav__link--projects" href="#projects">Проекты</a>
+          </li>
+          <li class="nav__item">
+            <a class="link nav__link nav__link--technologies" href="#technologies">Технологии</a>
+          </li>
+          <li class="nav__item">
+            <a class="link nav__link nav__link--about-me" href="#about-me">Обо мне</a>
+          </li>
+          <li class="nav__item">
+            <a class="link nav__link nav__link--about-me" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="socials__list socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--gh" href="https://github.com/terra456"></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--ld"></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--tg" href="https://t.me/terra456"></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main class="main">
+    <section id="portfolio" class="main__section section portfolio">
+      <div class="section__wrapper column-2__wrapper">
+        <div class="column-2__column portfolio__desc-column">
+          <h2 class="section__head portfolio__head">Приветствую, меня зовут Ольга Байнова</h2>
+          <p class="section__desc ">Я нахожусь в поиске работы на должность frontend-разработчика. Уверенно владею JavaScript (TypeScript), осваиваю различные фреймворки и новые технологии в рамках web-разработки.</p>
+          <a class="btn-link portfolio__btn">Резюме</a>
+        </div>
+        <div class="column-2__column portfolio__img-column">
+          <img class="portfolio__foto" src="./assets/images/me.jpg" alt="Olga Bainova" width="300px">
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="main__section section projects">
+      <div class="section__wrapper">
+        <h2 class="section__head projects__head">Проекты</h2>
+        <div class="projects__card card column-2__wrapper">
+          <div class="column-2__column card__img-column">
+            <img class="card__img" src="./assets/images/battleship.png" alt="battleship" width="400px">
+          </div>
+          <div class="column-2__column card__desc-column">
+            <h3 class="card__head card__head--1"></h3>
+            <ul class="card__tags tag__list">
+              <li class="tag__item">TypeScript</li>
+              <li class="tag__item">NodeJS</li>
+              <li class="tag__item">Websocket</li>
+            </ul>
+            <p class="section__desc card__desc card__desc--1">Веб сервер для игры "Морской бой" с использованием WebSocket.
+              Один из проектов для курса по NodeJS, фронтенд был предоставлен, требовалось написать бэк в соответствии
+              с описанием.
+            </p>
+            <a class="btn-link card__btn" href="https://github.com/terra456/battleship-server/pull/1">Перейти</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="technologies" class="main__section section technologies">
+      <div class="section__wrapper">
+        <h2 class="section__head technologies__head">Технологии</h2>
+        <ul class="technologies__list section__desc">
+          <li class="technologies__item">JavaScript, TypeScript</li>
+          <li class="technologies__item">Git, Github</li>
+          <li class="technologies__item">HTML, CSS, Sass, Less</li>
+          <li class="technologies__item">Webpack, Vite, Eslint, Prettier, Husky</li>
+          <li class="technologies__item">React, NextJS, redux, RTK</li>
+          <li class="technologies__item">NodeJS, Express, NestJS</li>
+          <li class="technologies__item">REST APi, GraphQl, WebSocket</li>
+          <li class="technologies__item">Postgress, MySQL, prisma</li>
+          <li class="technologies__item">Docker</li>
+          <li class="technologies__item">Linux</li>
+        </ul>
+      </div>
+    </section>
+    <section id="about-me" class="main__section section about-me">
+      <div class="section__wrapper">
+        <h2 class="section__head about-me__head">Обо мне</h2>
+        <p class="section__desc about-me__desc">Проходила обучение в RS-School на протяжении нескольких лет. Выполенено более 20 учебных проектов с использование разных технологий.</p>
+        <h3 class="about-me__subhead">Сертификаты</h3>
+        <a class="link" href="https://app.rs.school/certificate/3rywhtsf">React 2023 Q1</a>
+        <br>
+        <a class="link"href="https://app.rs.school/certificate/yr1c1gn2">NodeJS 2023 Q2</a>
+      </div>
+    </section>
+  </main>
+  <footer id="contacts" class="footer section">
+    <div class="section__wrapper footer__wrapper">
+      <div class="contacts">
+        <p class="contacts__head">Телефон:</p>
+        <p class="contacts__desc">
+          <a class="link" href="tel:+79638516454">+7(963)851-64-54</a>
+        </p>
+      </div>
+      <div class="contacts">
+        <p class="contacts__head">E-mail:</p>
+        <p class="contacts__desc">
+          <a class="link" href="mailto:terra.456@yandex.ru">terra.456@yandex.ru</a>
+        </p>
+      </div>
+      <ul class="socials__list socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--gh" href="https://github.com/terra456"></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--ld"></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--tg" href="https://t.me/terra456"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
