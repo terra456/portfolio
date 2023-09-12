@@ -1,49 +1,17 @@
-const languages = {
-  en: {
-    "nav__link--portfolio": "Portfolio",
-    "nav__link--projects": "Projects",
-    "nav__link--technologies": "Technologies",
-    "nav__link--about-me": "About me",
-    
-    "portfolio__head": "",
-    "portfolio__desc": "",
-    "portfolio__btn": "Resume for a job",
+const menuBtn = document.querySelector('.menu-btn');
+const headerNav = document.querySelector('.header__nav');
+const headerLinks = document.querySelectorAll('.nav__link');
 
-    "projects__head": "Projects",
-    
-    "card__btn": "Link",
-    "card__head--1": "",
-    "card__desc--1": "",
-    
-    "technologies__head": "Technologies",
-    "about-me__head": "About me",
+menuBtn.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  menuBtn.classList.toggle('menu-btn--active');
+  headerNav.classList.toggle('nav--open');
+});
 
-    "contacts__head": "Call me:"
+headerLinks.forEach((el) => {
+  el.addEventListener('click', (evt) => {
 
-  },
-
-  ru: {
-    "nav__link--portfolio": "Портфолио",
-    "nav__link--projects": "Проекты",
-    "nav__link--technologies": "Технологии",
-    "nav__link--about-me": "Обо мне",
-    
-    "portfolio__head": "",
-    "portfolio__desc": "",
-    "portfolio__btn": "Резюме",
-    
-    "projects__head": "Проекты",
-    
-    "card__btn": "Перейти",
-    "card__head--1": "",
-    "card__desc--1": "",
-    
-    "technologies__head": "Технологии",
-    "about-me__head": "Обо мне",
-
-    "contacts__head": "Телефон:"
-
-  }
-}
-
-console.log('hello');
+    menuBtn.classList.remove('menu-btn--active');
+    headerNav.classList.remove('nav--open');
+  })
+})

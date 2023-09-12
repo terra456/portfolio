@@ -9,6 +9,7 @@
 <body>
   <header class="header section">
     <div class="section__wrapper header__wrapper">
+      <button class="menu-btn"></button>
       <nav class="header__nav nav">
         <ul class="nav__list">
           <li class="nav__item">
@@ -32,9 +33,9 @@
         <li class="socials__item">
           <a class="socials__link socials__link--gh" href="https://github.com/terra456"></a>
         </li>
-        <li class="socials__item">
+        <!-- <li class="socials__item">
           <a class="socials__link socials__link--ld"></a>
-        </li>
+        </li> -->
         <li class="socials__item">
           <a class="socials__link socials__link--tg" href="https://t.me/terra456"></a>
         </li>
@@ -45,9 +46,9 @@
     <section id="portfolio" class="main__section section portfolio">
       <div class="section__wrapper column-2__wrapper">
         <div class="column-2__column portfolio__desc-column">
-          <h2 class="section__head portfolio__head">Приветствую, меня зовут Ольга Байнова</h2>
+          <h2 class="section__head portfolio__head">Приветствую, меня&nbsp;зовут Ольга&nbsp;Байнова</h2>
           <p class="section__desc ">Я нахожусь в поиске работы на должность frontend-разработчика. Уверенно владею JavaScript (TypeScript), осваиваю различные фреймворки и новые технологии в рамках web-разработки.</p>
-          <a class="btn-link portfolio__btn">Резюме</a>
+          <a class="btn-link portfolio__btn" href="assets/docs/Rezume-Olga-Bainova.pdf" download>Скачать резюме</a>
         </div>
         <div class="column-2__column portfolio__img-column">
           <img class="portfolio__foto" src="./assets/images/me.jpg" alt="Olga Bainova" width="300px">
@@ -68,11 +69,53 @@
               <li class="tag__item">NodeJS</li>
               <li class="tag__item">Websocket</li>
             </ul>
-            <p class="section__desc card__desc card__desc--1">Веб сервер для игры "Морской бой" с использованием WebSocket.
+            <p class="section__desc card__desc card__desc--1">Веб сервер для игры "Морской бой" на NodeJS с использованием WebSocket.
               Один из проектов для курса по NodeJS, фронтенд был предоставлен, требовалось написать бэк в соответствии
               с описанием.
             </p>
-            <a class="btn-link card__btn" href="https://github.com/terra456/battleship-server/pull/1">Перейти</a>
+            <a class="btn-link card__btn" href="https://github.com/terra456/battleship-server">Репозиторий</a>
+          </div>
+        </div>
+        <div class="projects__card card column-2__wrapper">
+          <div class="column-2__column card__img-column">
+            <img class="card__img" src="./assets/images/react.png" alt="react-application" width="400px">
+          </div>
+          <div class="column-2__column card__desc-column">
+            <h3 class="card__head card__head--1"></h3>
+            <ul class="card__tags tag__list">
+              <li class="tag__item">React</li>
+              <li class="tag__item">TypeScript</li>
+              <li class="tag__item">Redux</li>
+              <li class="tag__item">Jest</li>
+              <li class="tag__item">Tailwind</li>
+            </ul>
+            <p class="section__desc card__desc card__desc--1">
+              Проект для курса по React. Приложение для отображения информации полученной с внешнего REST-сервера, с возможностью поиска, а также добавление собственных данных.
+              Для храниения информации применялся Redux и RTK Query. Также был интегрирован SSR.
+              Юнит тестирвание с использованием JEST и React Testing Library, интергационное тестирвание с Cypress на финальной стадии проекта.
+              Макета не было, поэтому дизайн практически отсутвует. Для оформления использовался tailwindcss.
+              Также применялись Prettier, Eslint, и Husky.
+            </p>
+            <a class="btn-link card__btn" href="https://github.com/terra456/React-RSS">Репозиторий</a>
+          </div>
+        </div>
+        <div class="projects__card card column-2__wrapper">
+          <div class="column-2__column card__img-column">
+            <img class="card__img" src="./assets/images/art-quiz.png" alt="art-quiz" width="400px">
+          </div>
+          <div class="column-2__column card__desc-column">
+            <h3 class="card__head card__head--1"></h3>
+            <ul class="card__tags tag__list">
+              <li class="tag__item">JavaScript</li>
+              <li class="tag__item">HTML</li>
+              <li class="tag__item">SASS</li>
+              <li class="tag__item">Webpack</li>
+            </ul>
+            <p class="section__desc card__desc card__desc--1">Квиз на тему искусства. Интересное задание выполненое на чистом JavaScript.
+              Макет в Figma был предоставлен. Адаптивная верстка.
+            </p>
+            <a class="btn-link card__btn" href="https://github.com/terra456/art-quiz">Репозиторий</a>
+            <a class="btn-link card__btn" href="https://rolling-scopes-school.github.io/terra456-JSFE2021Q3/art-quiz/">Деплой</a>
           </div>
         </div>
       </div>
@@ -83,11 +126,11 @@
         <ul class="technologies__list section__desc">
           <li class="technologies__item">JavaScript, TypeScript</li>
           <li class="technologies__item">Git, Github</li>
-          <li class="technologies__item">HTML, CSS, Sass, Less</li>
+          <li class="technologies__item">HTML, CSS, Sass, BEM</li>
           <li class="technologies__item">Webpack, Vite, Eslint, Prettier, Husky</li>
           <li class="technologies__item">React, NextJS, redux, RTK</li>
           <li class="technologies__item">NodeJS, Express, NestJS</li>
-          <li class="technologies__item">REST APi, GraphQl, WebSocket</li>
+          <li class="technologies__item">REST API, GraphQl, WebSocket</li>
           <li class="technologies__item">Postgress, MySQL, prisma</li>
           <li class="technologies__item">Docker</li>
           <li class="technologies__item">Linux</li>
@@ -123,9 +166,9 @@
         <li class="socials__item">
           <a class="socials__link socials__link--gh" href="https://github.com/terra456"></a>
         </li>
-        <li class="socials__item">
+        <!-- <li class="socials__item">
           <a class="socials__link socials__link--ld"></a>
-        </li>
+        </li> -->
         <li class="socials__item">
           <a class="socials__link socials__link--tg" href="https://t.me/terra456"></a>
         </li>
